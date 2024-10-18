@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Login dalam HTML dan CSS | Codehal</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: rgb(212, 126, 126);
+            margin: 0;
+        }
+
+        .form-container {
+            width: 300px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9); /* Warna latar belakang yang diperbaiki */
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Menambahkan warna bayangan */
+            text-align: center;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: purple;
+            color: white; /* Diubah menjadi putih untuk kontras yang lebih baik */
+            font-size: 16px;
+            cursor: pointer;
+            transition: box-shadow 0.3s; /* Memperbaiki koma */
+        }
+
+        button {
+            background-color: purple;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <form action="">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required> <!-- Input untuk password yang diperbaiki -->
+            </div>
+
+            <div class="remember-forget">
+                <label><input type="checkbox"> Remember Me </label> <!-- Memperbaiki tipe input -->
+                <a href="#">Forget password?</a>
+            </div>
+
+            <button type="submit">Login</button> <!-- Memperbaiki struktur tombol -->
+
+            <div class="register-link">
+                <p>Don't have an account? <a href="#">Register</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
